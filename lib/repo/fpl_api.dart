@@ -57,7 +57,7 @@ class FplApi{
   }
   
   Future<LeagueModel> fetchLeague() async {
-    final response = await http.get(Uri.parse('$base/leagues-classic/679963/standings/'));
+    final response = await http.get(Uri.parse('$base/leagues-classic/1170111/standings/'));
 
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = jsonDecode(response.body);
